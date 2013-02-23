@@ -931,7 +931,7 @@
             }
         }
         
-        if (found === undefined && o.fallbackToDefaultNS) {
+        if (found === undefined && o.fallbackToDefaultNS && (ns != o.ns.defaultNs)) {
             found = _translate(key, options);
         }
     
